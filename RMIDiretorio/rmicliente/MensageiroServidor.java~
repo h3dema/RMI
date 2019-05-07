@@ -1,0 +1,22 @@
+package rmiserver;
+
+import java.rmi.Naming;
+
+public class MensageiroServidor {
+
+	public MensageiroServidor() {
+		try {
+			Mensageiro m = new MensageiroImpl();
+			Naming.rebind("rmi://localhost:1099/MensageiroService", m);
+		}
+		catch( Exception e ) {
+			System.out.println( "Erro: " + e );
+		}
+	}
+
+	public static void main(String[] args) {
+		// inicia o programa de mensagem
+		new MensageiroServer();
+	}
+}
+

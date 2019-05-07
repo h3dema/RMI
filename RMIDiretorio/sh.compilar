@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#
+# para compilar o conjunto no Linux
+#
+#
+
+javac rmicomum/MgmtArquivosInterface.java
+javac rmicomum/MgmtArquivos.java
+rmic rmicomum.MgmtArquivos
+javac rmicliente/Cliente.java
+javac rmiservidor/Servidor.java
