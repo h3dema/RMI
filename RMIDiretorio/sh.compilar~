@@ -1,5 +1,0 @@
-javac rmicomum/Mensageiro
-javac rmicomum/MensageiroImpl
-rmic rmicomum.MensageiroImpl
-javac rmicliente/MensageiroCliente
-javac rmiservidor/MensageiroServidor
